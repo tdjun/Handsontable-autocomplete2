@@ -15,22 +15,22 @@ Using this custom custom CellType
 
 ```JAVASCRIPT
 var columnsList =[
-    	{
-        data: 'codeId',
-        dataField: 'code',
-        type: 'autocomplete2',
-        source: codeList,
-        labelTemplate: '{{code}} | {{codeNm}}',
-        width: '200px'
-      },
-      {
-        data: 'codeId2',
-        type: 'autocomplete2',
-        source: function(value, rowObj, process){
-          var result = [];
-          var codeId2 = rowObj["codeId"];
-          if (codeId2) {
-          result = _.where(upperCodeList, {upperCode:codeId2});
+    {
+      data: 'codeId',
+      dataField: 'code',
+      type: 'autocomplete2',
+      source: codeList,
+      labelTemplate: '{{code}} | {{codeNm}}',
+      width: '200px'
+    },
+    {
+      data: 'codeId2',
+      type: 'autocomplete2',
+      source: function(value, rowObj, process){
+      	var result = [];
+      	var codeId2 = rowObj["codeId"];
+      	if (codeId2) {
+        	result = _.where(upperCodeList, {upperCode:codeId2});
         }
         process( result );
       },
@@ -40,7 +40,7 @@ var columnsList =[
       width: '200px'
     },
     {data: 'num3',width: '200px',},
-	];
+  ];
   container = $('#example_handsontable');
 
   container.handsontable({
