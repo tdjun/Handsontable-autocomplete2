@@ -2,8 +2,6 @@
 Handsontable autocomplete2 CellType
 
 
-Handsontable autocomplete2 custom CellType
-
 source가 collection인 autocomplete이 없어서 만들어 보왔습니다.
 
 https://github.com/trebuchetty/Handsontable-select2-editor 에서 많이 참고하였습니다.
