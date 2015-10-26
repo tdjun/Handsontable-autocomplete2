@@ -1,6 +1,5 @@
 # Handsontable-autocomplete2
 Handsontable autocomplete2 CellType
-# Handsontable-autocomplete2
 
 
 Handsontable autocomplete2 custom CellType
