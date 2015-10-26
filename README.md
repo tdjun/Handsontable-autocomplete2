@@ -6,7 +6,7 @@ source가 collection인 autocomplete이 없어서 만들었습니다.
 
 https://github.com/trebuchetty/Handsontable-select2-editor 에서 많이 참고하였습니다.
 
-Handsontable 0.17.0, Handlebars 4.0.3, Underscore.js 1.8.2 화경에서 작업하였습니다.
+Handsontable 0.17.0, Handlebars 4.0.3, Underscore.js 1.8.2 환경에서 작업하였습니다.
 
 http://jsfiddle.net/tdjun/vmsa1z5q/ (sample)
 
