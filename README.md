@@ -10,13 +10,49 @@ https://github.com/trebuchetty/Handsontable-select2-editor 에서 많이 참고�
 
 Handsontable 0.17.0, Handlebars 4.0.3, Underscore.js 1.8.2에서 작업하였습니다.
 
-{{예제}}
+http://jsfiddle.net/tdjun/vmsa1z5q/ (sample)
 
 
 Using this custom custom CellType
 
-{{사용법}}
+```JAVASCRIPT
+var columnsList =[
+    	{
+        data: 'codeId',
+        dataField: 'code',
+        type: 'autocomplete2',
+        source: codeList,
+        labelTemplate: '{{code}} | {{codeNm}}',
+        width: '200px'
+      },
+      {
+        data: 'codeId2',
+        type: 'autocomplete2',
+        source: function(value, rowObj, process){
+          var result = [];
+          var codeId2 = rowObj["codeId"];
+          if (codeId2) {
+          result = _.where(upperCodeList, {upperCode:codeId2});
+        }
+        process( result );
+      },
+      dataField: 'code',
+      labelTemplate: '{{code}} | {{codeNm}}',
+      strict: false,
+      width: '200px'
+    },
+    {data: 'num3',width: '200px',},
+	];
+  container = $('#example_handsontable');
 
+  container.handsontable({
+    data: mydata,
+    minSpareRows: 0,
+    colHeaders: true,
+    contextMenu: true,
+    columns: columnsList
+  });
+```
 
 License
 
