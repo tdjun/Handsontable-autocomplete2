@@ -30,7 +30,7 @@ var columnsList =[
       	var result = [];
       	var codeId2 = rowObj["codeId"];
       	if (codeId2) {
-        	result = _.where(upperCodeList, {upperCode:codeId2});
+        	result = _.where(subCodeList, {upperCode:codeId2});
         }
         process( result );
       },
