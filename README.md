@@ -8,7 +8,7 @@ https://github.com/trebuchetty/Handsontable-select2-editor 에서 많이 참고�
 
 Handsontable 0.17.0, Handlebars 4.0.3, Underscore.js 1.8.2 환경에서 작업하였습니다.
 
-http://jsfiddle.net/tdjun/vmsa1z5q/ (sample)
+http://jsfiddle.net/tdjun/vmsa1z5q/6/ (sample)
 
 
 Using this custom custom CellType
