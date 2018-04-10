@@ -77,5 +77,4 @@
   Handsontable.renderers.Autocomplete2Renderer = Autocomplete2Renderer;
   Handsontable.renderers.registerRenderer('autocomplete2', Autocomplete2Renderer);
 
-
 })(Handsontable, Handlebars);
